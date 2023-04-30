@@ -1,0 +1,48 @@
+2023-04-29 07:45:49,788 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-29 07:45:49,807 INFO supervisord started with pid 1
+2023-04-29 07:45:50,817 INFO spawned: 'migrate' with pid 13
+2023-04-29 07:45:50,822 INFO spawned: 'runserver' with pid 15
+2023-04-29 07:45:51,829 INFO success: migrate entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-29 07:45:51,831 INFO success: runserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-29 07:45:53,804 INFO exited: migrate (exit status 0; expected)
+2023-04-29 07:46:02,314 WARN received SIGINT indicating exit request
+2023-04-29 07:46:02,318 INFO waiting for runserver to die
+2023-04-29 07:46:02,363 WARN received SIGINT indicating exit request
+2023-04-29 07:46:02,557 INFO stopped: runserver (exit status 0)
+2023-04-29 08:09:22,703 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-29 08:09:22,712 INFO supervisord started with pid 1
+2023-04-29 08:09:23,736 INFO spawned: 'migrate' with pid 14
+2023-04-29 08:09:23,750 INFO spawned: 'runserver' with pid 16
+2023-04-29 08:09:24,762 INFO success: migrate entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-29 08:09:24,765 INFO success: runserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-29 08:09:26,154 INFO exited: migrate (exit status 0; expected)
+2023-04-29 08:12:41,342 WARN received SIGINT indicating exit request
+2023-04-29 08:12:41,356 INFO waiting for runserver to die
+2023-04-29 08:12:41,362 WARN received SIGINT indicating exit request
+2023-04-29 08:12:41,660 INFO stopped: runserver (exit status 0)
+2023-04-29 08:14:25,289 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-29 08:14:25,299 INFO supervisord started with pid 1
+2023-04-29 08:14:26,325 INFO spawned: 'migrate' with pid 14
+2023-04-29 08:14:26,333 INFO spawned: 'runserver' with pid 16
+2023-04-29 08:14:27,341 INFO success: migrate entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-29 08:14:27,343 INFO success: runserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-29 08:14:30,163 INFO exited: migrate (exit status 0; expected)
+2023-04-29 08:15:02,163 WARN received SIGINT indicating exit request
+2023-04-29 08:15:02,169 INFO waiting for runserver to die
+2023-04-29 08:15:02,183 WARN received SIGINT indicating exit request
+2023-04-29 08:15:02,478 INFO stopped: runserver (exit status 0)
+2023-04-29 23:48:23,701 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-29 23:48:23,711 INFO supervisord started with pid 11
+2023-04-29 23:48:24,725 INFO spawned: 'runserver' with pid 20
+2023-04-29 23:48:25,731 INFO success: runserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-29 23:51:00,675 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-29 23:51:00,689 INFO supervisord started with pid 11
+2023-04-29 23:51:01,719 INFO spawned: 'runserver' with pid 20
+2023-04-29 23:51:02,736 INFO success: runserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-29 23:52:38,416 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-04-29 23:52:38,424 INFO supervisord started with pid 11
+2023-04-29 23:52:39,456 INFO spawned: 'migrate' with pid 20
+2023-04-29 23:52:39,471 INFO spawned: 'runserver' with pid 22
+2023-04-29 23:52:40,479 INFO success: migrate entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-29 23:52:40,481 INFO success: runserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-04-29 23:52:41,573 INFO exited: migrate (exit status 1; not expected)
