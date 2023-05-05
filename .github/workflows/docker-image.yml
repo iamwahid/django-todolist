@@ -17,20 +17,24 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Set variables
+      run: |
+        VER=$(cat VERSION)
+        echo "VERSION=$VER" >> $GITHUB_ENV
     - name: Build the Docker image
-      run: DOCKER_DEFAULT_PLATFORM=linux/amd64 docker build --tag $IMAGE_TAG --file Dockerfile .
+      run: DOCKER_DEFAULT_PLATFORM=linux/amd64 docker build --tag iamwahidn/django-todolist:$VERSION --file Dockerfile .
     - name: Docker login
       run: docker login docker.io -u iamwahidn -p $DOCKER_TOKEN
     - name: Push Docker image 
-      run: docker push $IMAGE_TAG
+      run: VERSION=$(cat VERSION) docker push iamwahidn/django-todolist:$VERSION
     - name: Install yq
       run: wget -qO yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 && chmod a+x yq
     - name: update version
-      run: yq e '.spec.template.spec.containers[0].image = env(IMAGE_TAG)' -i todolist/deployment.yaml
+      run: IMAGE=iamwahidn/django-todolist:$VERSION yq e '.spec.template.spec.containers[0].image = env(IMAGE)' -i todolist/deployment.yaml
     - name: save
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: git config --global user.email "iam.wahidn@gmail.com" && git config --global user.name "Wahidun Niam" && git add todolist/deployment.yaml && git commit -m "Update version"
+      run: git config --global user.email "iam.wahidn@gmail.com" && git config --global user.name "Wahidun Niam" && git add todolist/deployment.yaml && git commit -m "Update version $VERSION"
     - name: push
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
