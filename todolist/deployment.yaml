@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-todolist
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: django-todolist
+  template:
+    metadata:
+      labels:
+        app: django-todolist
+    spec:
+      containers:
+      - image: iamwahidn/django-todolist:1.10
+        name: django-todolist
+        ports:
+        - containerPort: 3030
