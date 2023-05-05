@@ -14,7 +14,7 @@ spec:
         app: django-todolist
     spec:
       containers:
-        - image: iamwahidn/django-todolist:latest
+        - image: iamwahidn/django-todolist:1.11
           name: django-todolist
           ports:
             - containerPort: 3030
